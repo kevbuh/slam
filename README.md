@@ -1,6 +1,7 @@
 # Monocular Visual SLAM
-
-![slam text](https://t4.ftcdn.net/jpg/02/20/92/05/360_F_220920560_ISLg8RLSiX2liqSZhT97gM275kqh9oYH.jpg)
+<p align="center">
+ <img src="./orb-example.png" alt="picture of detecting orbs" width="500"/>
+</p>
 
 SLAM (simultaneous localization and mapping) is a method used for autonomous vehicles, or anything else that moves around, that lets you build a map and localize your vehicle in that map at the same time. SLAM algorithms allow the vehicle to map out unknown environments. Engineers use the map information to carry out tasks such as path planning and obstacle avoidance. It is used very widely in any kind of robotics applications that require the robot to move around a new environment.
 
@@ -24,5 +25,4 @@ Loop closure:
 Structure from Motion
 
 - The problem of reconstructing the 3D structure of the environment from a collection of 2D images.
-- The goal is to estimate where the camera was when each image was taken. Below shows an example image with ORB in action.
-  ![picture of detecting orbs](./orb-example.png)
+- The goal is to estimate where the camera was when each image was taken. 

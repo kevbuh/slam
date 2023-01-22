@@ -11,6 +11,7 @@ Things needed to make the map:
 1. Triangulation from landmarks
 
 - Humans and most animals have two eyes, because that allows us to figure out where objects are relative to us using triangulation
+
   ![picture of triangulation using two eyes](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Binocular_vision.svg/440px-Binocular_vision.svg.png)
 
 2. Localization: inferring location given a map.

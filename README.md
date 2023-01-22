@@ -6,4 +6,6 @@ SLAM is the computational problem of constructing or updating a map of an unknow
 
 I am using OpenCV to help compute things like features in a frame, using ORB. I plan on using PyGame to actually map the 3D display with the points in time and space.
 
-![picture of detecting orbs](./slam-orb.png)
+Show below is the ORB feature in action.
+
+![picture of detecting orbs](./orb-example.png)

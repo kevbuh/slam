@@ -1,5 +1,5 @@
 class Map(object):
-    def __init__(self, W, H):
+    def __init__(self):
         self.frames = []
         self.points = []
         self.max_frame = 0

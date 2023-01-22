@@ -25,15 +25,14 @@ if __name__ == "__main__":
         # print("got display env")
         disp3d = Display3D(W, H)
 
-    # print(W, H)
-
-    # if os.getenv("ENV") is None:
-    #     print("got env env")
-
     while(cap.isOpened()):
         ret, frame = cap.read()
         # frame = cv2.resize(frame, (W//3, H//3))
         # print(f"r ----- frame:{frame.shape}")
+
+        if not ret:
+            print("Done!")
+            break
 
         # Initiate STAR detector
         orb = cv2.ORB_create()
@@ -51,10 +50,13 @@ if __name__ == "__main__":
         cv2.imshow('final', final_frame)
 
         if disp2d is not None:
-            print("2d display")
-
             # img = slam.mapp.frames[-1].annotate(frame)
             disp2d.paint(final_frame)
+
+        if disp3d is not None:
+            disp3d.mapp.add_frame(final_frame)
+            print(
+                f"length frames {len(disp3d.mapp.frames)}, frame obj {des}")
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break

@@ -5,3 +5,5 @@
 SLAM is the computational problem of constructing or updating a map of an unknown environment while simultaneously keeping track of an agent's location within it.
 
 I am using OpenCV to help compute things like features in a frame, using ORB. I plan on using PyGame to actually map the 3D display with the points in time and space.
+
+![picture of detecting orbs](./slam-orb.png)
